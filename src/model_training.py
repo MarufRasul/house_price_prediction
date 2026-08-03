@@ -49,9 +49,9 @@ class ModelTrainer:
 
     def compare_models(self):
         """Выводит сравнение моделей."""
-        print("\n🔍 Сравнение моделей:")
+        print("\n Сравнение моделей:")
         for name, res in self.results.items():
             print(f"  {name}: R² = {res['r2']:.4f}")
         best = max(self.results, key=lambda k: self.results[k]['r2'])
-        print(f"\n🏆 Лучшая модель: {best} с R² = {self.results[best]['r2']:.4f}")
+        print(f"\n Лучшая модель: {best} с R² = {self.results[best]['r2']:.4f}")
         return best
