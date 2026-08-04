@@ -2,14 +2,12 @@ import numpy as np
 import pandas as pd
 
 
-def generate_house_data():
+def generate_house_data(n_samples=100, seed=42, save_csv=False):
     """
     Генерирует датасет о домах и возвращает pandas DataFrame.
     Если save_csv=True, сохраняет в файл 'data/houses.csv'.
     """
-    n_samples=100, 
-    seed=42, 
-    save_csv=False
+    
     np.random.seed(seed)
     n = n_samples
 
